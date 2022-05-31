@@ -1,24 +1,34 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Testing out rails modularity with engines and managing their version by git submodules.
 
-Things you may want to cover:
+## Creating a new product
 
-* Ruby version
+Follow the standard Rails new project command
+`rails new blog`
 
-* System dependencies
+## Add Submodules
 
-* Configuration
+```
+$ git submodule add https://github.com/plusonedev/engine-posts.git lib/engines/posts
+```
 
-* Database creation
+## Commit changes to add submodules to remote
 
-* Database initialization
+```
+  $ git commit -m "Added the submodule to the project."
+  $ git push
+```
 
-* How to run the test suite
+# Update Engines
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ git submodule update --init --recursive
 
-* Deployment instructions
-
-* ...
+cd engines/[submodule]
+git checkout [version_branch]
+cd ..
+git add [submodule]
+git commit -m "updated [submodule] to [version]"
+git push
+```
