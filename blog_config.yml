@@ -1,0 +1,13 @@
+---
+engines:
+  - name: Posts
+    repo: git@github.com:plusonedev/engine-posts.git
+    branch: latest
+    path: lib/engines/posts
+    requires: []
+
+  - name: Comments
+    repo: git@github.com:plusonedev/engine-comments.git
+    branch: master
+    path: lib/engines/comments
+    requires: [Posts]

@@ -70,3 +70,6 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem 'posts', path: './lib/engines/posts'
+gem 'comments', path: './lib/engines/comments'
