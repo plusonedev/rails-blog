@@ -1,3 +1,0 @@
-[submodule "lib/engines/posts"]
-	path = lib/engines/posts
-	url = https://github.com/plusonedev/engine-posts.git
