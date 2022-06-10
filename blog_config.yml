@@ -1,13 +1,7 @@
 ---
+install_path: lib/engines
 engines:
-  - name: Posts
-    repo: git@github.com:plusonedev/engine-posts.git
+  - name: engine-articles
+    repo: git@github.com:plusonedev/engine-articles.git
     branch: latest
-    path: lib/engines/posts
     requires: []
-
-  - name: Comments
-    repo: git@github.com:plusonedev/engine-comments.git
-    branch: master
-    path: lib/engines/comments
-    requires: [Posts]

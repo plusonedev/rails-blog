@@ -71,5 +71,4 @@ group :test do
   gem "webdrivers"
 end
 
-gem 'posts', path: './lib/engines/posts'
-gem 'comments', path: './lib/engines/comments'
+#gem 'engine-articles', path: 'lib/engines/engine-articles'
